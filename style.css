@@ -1,0 +1,89 @@
+body {
+  background-color: #aa3939;
+  color: #ffaaaa;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clock {
+  width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 35px;
+  margin-top: 150px;
+}
+
+#session-section,
+#break-section,
+#timer-section,
+#button-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#session-section,
+#break-section {
+  row-gap: 5px;
+}
+
+#timer-section,
+#button-section {
+  grid-column: 1/3;
+  row-gap: 10px;
+}
+
+#session-label,
+#break-label {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+#session-decrement,
+#break-decrement {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#session-length,
+#break-length {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#session-increment,
+#break-increment {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#timer-label {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 50px;
+}
+
+#time-left {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 50px;
+}
+
+#start_stop {
+  grid-column: 1/2;
+}
+
+#reset {
+  grid-column: 3/4;
+}
+
+.buttons {
+  border: solid;
+  color: black;
+  background-color: #d46a6a;
+}
+
+.buttons:active {
+  transform: translateY(2px);
+}
